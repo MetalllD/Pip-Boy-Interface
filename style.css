@@ -1,0 +1,57 @@
+body{
+    color:#17f81a;
+    background-color: #282b27;
+    font-family: pipboy;
+}
+
+@font-face{
+    font-family: pipboy;
+    src : url("./monofonto.ttf");
+}
+
+ul > li.nav-item > a.nav-link{
+    color:#17f81a;
+}
+
+nav >div.container-fluid >div.collapse >div.navbar-nav > a.nav-link{
+    color:#17f81a;
+}
+.image{
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.footer-pip{
+    position:fixed;
+    bottom:0;
+    width:calc(100%-20px);
+    margin:10px;
+}
+
+.navbar{
+    border-bottom: 2px solid #17f81a;
+    margin: 0px 5px 20px 5px;
+}
+
+.navbar::before, .navbar::after{
+    height:10px;
+    width:2px;
+    content:"";
+    position:absolute;
+    display:block;
+    z-index:5000;
+    bottom:-10px;
+    background: #17f81a;
+}
+
+.navbar::before{
+    left:0px;
+}
+
+.navbar::after{
+    right:0px;
+}

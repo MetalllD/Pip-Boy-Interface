@@ -7,15 +7,16 @@
     
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
     
         <title>Hello, world!</title>
       </head>
       <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#stat">STAT</a>
+                  <a class="nav-link" aria-current="page" href="#stat">STAT</a>
                   <a class="nav-link" href="#inv">INV</a>
                   <a class="nav-link" href="#data">DATA</a>
                   <a class="nav-link disabled" href="#map">MAP</a>
@@ -27,7 +28,7 @@
           
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="status-tab" data-bs-toggle="tab" href="#status" role="tab" aria-controls="status" aria-selected="true">STATUS</a>
+              <a class="nav-link" id="status-tab" data-bs-toggle="tab" href="#status" role="tab" aria-controls="status" aria-selected="true">STAT</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" id="special-tab" data-bs-toggle="tab" href="#special" role="tab" aria-controls="special" aria-selected="false">SPECIAL</a>
@@ -37,11 +38,30 @@
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">status</div>
+            <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+                <div class="container">
+                     <img src="pipboy.png" class="image">
+                </div>
+        </div>
             <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">special</div>
             <div class="tab-pane fade" id="perks" role="tabpanel" aria-labelledby="perks-tab">perks</div>
-          </div>
-             
+        </div>
+
+        <div class="container footer-pip">
+            <div class="row justify-content-start">
+                <div class="col-3">
+                    HP 90/90
+                </div>
+                <div class="col-6">
+                    LEVEL 1
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="col-3">
+                   AP
+                </div>
+            </div>
+        </div>
+        
           
           
           
