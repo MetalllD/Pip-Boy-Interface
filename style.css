@@ -1,7 +1,20 @@
 body{
     color:#17f81a;
-    background-color: #282b27;
+    background-color: #1b1d1a;
     font-family: pipboy;
+}
+
+body::after{
+    width: 100%;
+    height:100%;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:repeating-linear-gradient(0deg, rgb(0,0,0,0.6), rgb(0,0,0,0.6) 1px, transparent 1px, transparent 2px);
+    opacity:30%;
+    z-index:1000000;
+    pointer-events: none;
 }
 
 @font-face{
@@ -14,8 +27,34 @@ ul > li.nav-item > a.nav-link{
 }
 
 nav >div.container-fluid >div.collapse >div.navbar-nav > a.nav-link{
+    position:relative;
+    display:block;
+    margin:0px 8% 0px 8%;
+    font-size:22px;
+    line-height:5px;
+    text-align: center;
+    background-color: #1b1d1a;
+    z-index:2000;
     color:#17f81a;
 }
+
+
+nav >div.container-fluid >div.collapse >div.navbar-nav > a.active::before {
+    position:absolute;
+    content:"";
+    width:150%;
+    height:22.5px;
+    left:-16px;
+    border:2px solid  #17f81a;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+nav >div.container-fluid >div.collapse >div.navbar-nav{
+    margin:10px 20px 0px 20px;
+    text-align: center;
+}
+
 .image{
     margin: auto;
     display: block;
@@ -35,6 +74,10 @@ nav >div.container-fluid >div.collapse >div.navbar-nav > a.nav-link{
 .navbar{
     border-bottom: 2px solid #17f81a;
     margin: 0px 5px 20px 5px;
+}
+
+nav >div.container-fluid >div.collapse > div.navbar-nav {
+    width:100%;
 }
 
 .navbar::before, .navbar::after{
